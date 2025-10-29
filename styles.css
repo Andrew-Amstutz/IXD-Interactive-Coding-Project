@@ -65,7 +65,7 @@ h1 {
 }
 
 .hero-button:hover {
-  animation: HeroHover 2s ease-in-out infinite alternate;
+  animation: HeroHover 1500ms ease-in-out infinite alternate;
 }
 
 /* Special thanks to https://www.gradient-animator.com! */
@@ -90,8 +90,7 @@ h1 {
 
 .hero-gradient {
   width: 100%;
-  height: 155px;
-  bottom: 0;
+  height: 175px;
   background: linear-gradient(0deg, #fff 23%, rgba(255, 255, 255, 0) 100%);
 }
 
@@ -104,7 +103,7 @@ input {
 }
 
 icon {
-  padding: 20px;
+  padding: 20px !important;
 }
 
 .jetski-animation {
@@ -139,16 +138,15 @@ icon {
   }
 }
 
-/*This disappears when I try to style it. Weird...*/
 label {
   display: block;
-  color: var(--ice-gray);
+  color: white;
   font-family: Roboto;
-  font-size: 20px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  z-index: 11;
+  padding-left: 5px;
 }
 
 .links {
@@ -235,7 +233,7 @@ Kept here just in case. */
 }
 
 .modal-header {
-  padding: 10px 15px;
+  padding: 10px 15px 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -259,7 +257,7 @@ Kept here just in case. */
 }
 
 .modal-body {
-  padding: 10px 15px;
+  padding: 0px 15px;
 }
 
 #overlay {
