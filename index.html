@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Jetski Rentals</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <nav>
+      <!--Why does the style work here but not in the dedicated sheet?!-->
+      <div class="icon" style="padding: 20px">
+        <a href="index.html"
+          ><img src="images/Jetski Icon.png" alt="Jetski Logo"
+        /></a>
+      </div>
+      <div>
+        <ul class="links">
+          <li>
+            <a href="locations.html">Locations</a>
+          </li>
+          <li>
+            <a href="Rentals">Rentals</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section id="hero">
+      <div class="hero-content">
+        <h1>Feel the Thrill of Jetski</h1>
+        <p class="hero-body">
+          We have locations in almost every state. Find out if we have a
+          location near you!
+        </p>
+        <a href="locations.html" class="hero-button"> Find a Location </a>
+      </div>
+      <div class="jetski-animation"></div>
+      <div class="hero-gradient"></div>
+    </section>
+    <button data-modal-target="#modal" class="manual-open">Open Modal</button>
+    <div class="modal" id="modal">
+      <div class="modal-header">
+        <div class="modal-title">Offer for New Customers!</div>
+        <button data-close-button class="close-button">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p class="modal-text">
+          Sign up with your email and be sent a one time coupon code for 25%
+          off!
+        </p>
+        <!--Not sure where the action should point to. "Submit" is just a placeholder for now-->
+        <form action="submit">
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" />
+        </form>
+        <div class="buttons">
+          <button class="modal-button">Sign Up</button>
+          <button data-close-button class="cancel-button">
+            I hate saving money
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="overlay"></div>
+  </body>
+</html>
